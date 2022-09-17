@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bananese Speaker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="navbar"><span class="nav-brand">Bananese Speaker</span></nav>
+    <main class="main">
+      <textarea
+        rows="4"
+        class="user-input"
+        id="user-input"
+        placeholder="Enter text to convert"
+      ></textarea>
+      <div class="translate">
+        <button class="btn-translate" id="btn-translate">
+          Translate to Bananese
+        </button>
+        <p>Your translation will go here <span class="finger">👇</span></p>
+      </div>
+      <textarea
+        rows="3"
+        class="translated-output"
+        id="translated-output"
+        disabled
+      ></textarea>
+    </main>
+    <footer class="footer">
+      <h3 class="about">About</h3>
+      <p class="footer-description">
+        Are you a fan of minions? Did you know that the gibberish they say is an
+        actual language. Use the translator to convert your text from English to
+        Minion speak or Banana language.
+      </p>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
