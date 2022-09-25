@@ -11,6 +11,10 @@ const translate = (text) => {
       .then((val) => {
         console.log(val);
         translatedText.innerText = val.contents.translated;
+      })
+      .catch((err) => {
+        console.log(err);
+        alert("Some error occurred");
       });
   } else {
     alert("Please enter some text");
